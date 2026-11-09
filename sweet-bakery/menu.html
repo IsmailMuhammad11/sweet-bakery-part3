@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Sweet Bakery - Breads, Pastries, Drinks and Custom Cakes</title>
+    <meta name="description" content="Browse the Sweet Bakery menu: sourdough and baguettes, croissants and pastries, coffee, and made-to-order custom cakes.">
+    <meta name="keywords" content="bakery menu, sourdough, baguette, croissant, cinnamon roll, custom cake, coffee">
+    <meta name="author" content="Sweet Bakery">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#8B5E3C">
+    <meta property="og:title" content="Menu | Sweet Bakery - Breads, Pastries, Drinks and Custom Cakes">
+    <meta property="og:description" content="Browse the Sweet Bakery menu: sourdough and baguettes, croissants and pastries, coffee, and made-to-order custom cakes.">
+    <meta property="og:type" content="website">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>Sweet Bakery</h1>
+        <p>Freshly baked, every day.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" aria-current="page">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <h2 style="border:none;margin-bottom:0.5rem;">Our Menu</h2>
+        <div class="filter-bar" role="group" aria-label="Filter menu by category">
+            <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="breads" aria-pressed="false">Breads</button>
+            <button type="button" class="filter-btn" data-filter="pastries" aria-pressed="false">Pastries</button>
+            <button type="button" class="filter-btn" data-filter="drinks" aria-pressed="false">Drinks</button>
+            <button type="button" class="filter-btn" data-filter="custom" aria-pressed="false">Custom Cakes</button>
+        </div>
+
+        <section id="breads" data-category="breads" class="reveal">
+            <h2>Breads</h2>
+            <div class="menu-item"><span>Sourdough Loaf</span><span>$6.50</span></div>
+            <div class="menu-item"><span>Whole Wheat Loaf</span><span>$5.50</span></div>
+            <div class="menu-item"><span>Baguette</span><span>$3.00</span></div>
+        </section>
+
+        <section id="pastries" data-category="pastries" class="reveal">
+            <h2>Pastries</h2>
+            <div class="menu-item"><span>Butter Croissant</span><span>$3.50</span></div>
+            <div class="menu-item"><span>Cinnamon Roll</span><span>$4.00</span></div>
+            <div class="menu-item"><span>Chocolate Danish</span><span>$4.25</span></div>
+        </section>
+
+        <section id="drinks" data-category="drinks" class="reveal">
+            <h2>Drinks</h2>
+            <div class="menu-item"><span>Filter Coffee</span><span>$2.50</span></div>
+            <div class="menu-item"><span>Cappuccino</span><span>$3.25</span></div>
+        </section>
+
+        <section id="custom" data-category="custom" class="reveal">
+            <h2>Custom Cakes</h2>
+            <figure>
+                <img src="images/custom-cake.jpg"
+                     alt="Decorated custom birthday cake made to order by Sweet Bakery"
+                     width="900" height="500" loading="lazy">
+            </figure>
+            <p>Planning a birthday, wedding, or celebration? We take custom cake orders with at least
+               2 days notice. Visit our <a href="contact.html">Contact</a> page to get in touch.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Sweet Bakery. All rights reserved.</p>
+        <p>123 Main Street, Springfield | Open Mon-Sat, 7am-5pm</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sweet Bakery - Location, Hours and Custom Cake Enquiries</title>
+    <meta name="description" content="Find Sweet Bakery on the map, check our opening hours, or send an enquiry about a custom cake order.">
+    <meta name="keywords" content="contact sweet bakery, bakery location, opening hours, custom cake enquiry">
+    <meta name="author" content="Sweet Bakery">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#8B5E3C">
+    <meta property="og:title" content="Contact Us | Sweet Bakery - Location, Hours and Custom Cake Enquiries">
+    <meta property="og:description" content="Find Sweet Bakery on the map, check our opening hours, or send an enquiry about a custom cake order.">
+    <meta property="og:type" content="website">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>Sweet Bakery</h1>
+        <p>Freshly baked, every day.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section id="details" class="reveal">
+            <h2>Visit Us</h2>
+            <p>123 Main Street, Springfield</p>
+            <p>Open Monday - Saturday, 7am - 5pm</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: hello@sweetbakery.example</p>
+        </section>
+
+        <section id="map" class="reveal">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe title="Google Map showing the location of Sweet Bakery"
+                        src="https://www.google.com/maps?q=123+Main+Street+Springfield&amp;output=embed"
+                        loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="enquiry" class="reveal">
+            <h2>Send an Enquiry</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+                    <span class="error" id="name-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+                    <span class="error" id="email-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-error">
+                    <span class="error" id="phone-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry">Enquiry type *</label>
+                    <select id="enquiry" name="enquiry" required aria-describedby="enquiry-error">
+                        <option value="">-- Please choose --</option>
+                        <option value="general">General question</option>
+                        <option value="custom-cake">Custom cake order</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                    <span class="error" id="enquiry-error" role="alert"></span>
+                </div>
+
+                <div class="form-group" id="date-group" hidden>
+                    <label for="date">Date needed *</label>
+                    <input type="date" id="date" name="date" aria-describedby="date-error date-hint">
+                    <span class="hint" id="date-hint">We need at least 2 days notice for custom cakes.</span>
+                    <span class="error" id="date-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" maxlength="500" required aria-describedby="message-error message-count"></textarea>
+                    <span class="hint" id="message-count">0 / 500</span>
+                    <span class="error" id="message-error" role="alert"></span>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Sweet Bakery. All rights reserved.</p>
+        <p>123 Main Street, Springfield | Open Mon-Sat, 7am-5pm</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
